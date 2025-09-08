@@ -1,0 +1,20 @@
+# Archivos de sistema de macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos de iconos
+Icon
+
+# Thumbnails
+._*
+
+# Archivos de Spotlight
+.Spotlight-V100
+.Trashes
+
+# Archivos de volúmenes montados
+.VolumeIcon.icns
+
+# Archivos temporales
+.fseventsd

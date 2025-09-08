@@ -1,0 +1,78 @@
+:root {
+    --color-primary: #FF9E44;
+    --color-neutral: #F8F5F0;
+    --color-secondary: #7EC8E3;
+    --color-text: #4A4A4A;
+    --color-accent: #FF5C5C;
+}
+
+/* navbar */
+.navbar-custom {
+    background-color: var(--color-primary);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white !important;
+}
+
+.navbar-custom .nav-link:hover {
+    color: var(--color-neutral) !important;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.principal-section {
+    background-color: var(--color-neutral);
+}
+
+/* Body */
+.principal-section h1 {
+    color: var(--color-primary);
+}
+
+
+body{
+    background-color: var(--color-neutral);
+    color: var(--color-text);
+}
+.sobre.nosotros {
+    background-color: var(--color-neutral);
+}
+.logros {
+    background-color: var(--color-neutral);
+}
+
+.logro-1 {
+    background-color: var(--color-secondary);
+    color: var(--color-neutral);
+}
+
+.logro-2 {
+    background-color: var(--color-secondary);
+    color: var(--color-neutral);
+}
+
+.logro-3 {
+    background-color: var(--color-secondary);
+    color: var(--color-neutral);
+}
+
+/* footer */
+.footer-custom {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.footer-custom a {
+    color: var(--color-neutral);
+    text-decoration: none;
+}
+
+.footer-custom a:hover {
+    color: white;
+    text-decoration: underline;
+}
