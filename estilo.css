@@ -1,9 +1,118 @@
-body{
-    background-color: #f0f0f0;
+/* Paleta de colores */
+:root {
+    --color-primary: #FF9E44;
+    --color-neutral: #F8F5F0;
+    --color-secondary: #7EC8E3;
+    --color-text: #4A4A4A;
+    --color-accent: #FF5C5C;
 }
 
-.container-nav{
-    color: #4A7B9D;
-    padding: 10px;
-    align-items: center;
+/* estilos generales */
+body {
+    color: var(--color-text);
+    font-family: 'Arial', sans-serif;
+}
+
+/* navbar */
+.navbar-custom {
+    background-color: var(--color-primary);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white !important;
+}
+
+.navbar-custom .nav-link:hover {
+    color: var(--color-neutral) !important;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.principal-section {
+    background-color: var(--color-neutral);
+}
+
+/* botones */
+.btn-accent {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: white;
+}
+
+.btn-accent:hover {
+    background-color: #d35400;
+    border-color: #d35400;
+    color: white;
+}
+
+.btn-outline-accent {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.btn-outline-accent:hover {
+    background-color: var(--color-accent);
+    color: white;
+}
+
+/* títulos de sección */
+.section-title {
+    color: var(--color-primary);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--color-accent);
+}
+
+/* tarjetas de gatitos */
+.card {
+    width:  250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* footer */
+.footer-custom {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.footer-custom a {
+    color: var(--color-neutral);
+    text-decoration: none;
+}
+
+.footer-custom a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .hero-section .display-4 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
 }
