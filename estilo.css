@@ -108,7 +108,7 @@ body {
 
 
 @media (max-width: 768px) {
-    .hero-section .display-4 {
+    .principal-section .display-4 {
         font-size: 2rem;
     }
     
