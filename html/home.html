@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pawville - Adopción de Gatitos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="/css/estilo.css">
 </head>
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container">
             <div class="d-flex align-items-center">
-                <img src="img/logo.png" alt="Logo Pawville" class="logo me-2" style="width: 50px;">
-                <a class="navbar-brand" href="#">Pawville</a>
+                <img src="/img/logo.svg" alt="Logo Pawville" class="logo me-2" style="width: 50px;">
+                <a class="navbar-brand" href="#" >Pawville</a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -58,9 +58,9 @@
     </section>
 
     <!-- gatitos destacados -->
-    <section class="destacados py-5 bg-light">
+    <section class="destacados-section py-5">
         <div class="container">
-            <h2 class="text-center mb-5 section-title">Gatitos Destacados</h2>
+            <h2 class="text-center mb-5 section-title">Destacados de la semana</h2>
             <div class="row">
                 <!-- gatito1 -->
                 <div class="col-md-6 col-lg-3 mb-4">
@@ -117,6 +117,109 @@
             </div>
         </div>
     </section>
+    <section class="por-que-adoptar-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title " style="color: #F8F5F0; text-shadow: 2px 2px 6px #4A4A4A;">¿Por qué adoptar?</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4" style="text-align: center; color: #F8F5F0;">
+                    <div class="reason me-3">
+                        <h4 style="text-shadow: 2px 2px 6px #4A4A4A;">Salva vidas</h4>
+                        <p style="text-shadow: 1px 1px 4px #4A4A4A;">Cada adopción abre espacio para rescatar a otra mascota</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" style="text-align: center; color: #F8F5F0;">
+                    <div class="reason me-3">
+                        <h4 style="text-shadow: 2px 2px 6px #4A4A4A;">Gana un amigo</h4>
+                        <p style="text-shadow: 1px 1px 4px #4A4A4A;">La compañía perfecta para tu hogar y tu rutina</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" style="text-align: center; color: #F8F5F0;">
+                    <div class="reason me-3">
+                        <h4 style="text-shadow: 2px 2px 6px #4A4A4A;">Apoya una buena causa</h4>
+                        <p style="text-shadow: 1px 1px 4px #4A4A4A;">Apoyas a refugios y voluntarios comprometidos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- testimonios -->
+    <section class="success-stories py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Testimonios de adoptantes</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- slide1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card testimonio-card h-100">
+                                    <div class="card-body">
+                                        <p class="card-text">"Apolo llenó nuestra casa de alegría. ¡Gracias por hacerlo posible!"</p>
+                                        <footer class="blockquote-footer">Ana y Luis</footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card testimonio-card h-100">
+                                    <div class="card-body">
+                                        <p class="card-text">"Lady es un amor. La adopción fue rápida y clara."</p>
+                                        <footer class="blockquote-footer">Sofía</footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card testimonio-card h-100">
+                                    <div class="card-body">
+                                        <p class="card-text">"Max es nuestro mejor amigo. ¡Recomendado!"</p>
+                                        <footer class="blockquote-footer">Familia Pérez</footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card testimonio-card h-100">
+                                    <div class="card-body">
+                                        <p class="card-text">"Freya se adaptó muy rápido y es muy cariñosa."</p>
+                                        <footer class="blockquote-footer">Carlos</footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card testimonio-card h-100">
+                                    <div class="card-body">
+                                        <p class="card-text">"Adoptar fue la mejor decisión para nuestra familia."</p>
+                                        <footer class="blockquote-footer">María y Tomás</footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card testimonio-card h-100">
+                                    <div class="card-body">
+                                        <p class="card-text">"Excelente atención y seguimiento post-adopción."</p>
+                                        <footer class="blockquote-footer">Valentina</footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
 
     <!-- footer -->
     <footer class="footer-custom py-4">
@@ -156,5 +259,8 @@
             <p class="text-center mb-0">Desarrollado por alumnos de DuocUC.</p>
         </div>
     </footer>
+
+    <!-- para el carrusel -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

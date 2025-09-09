@@ -1,4 +1,4 @@
-/* Paleta de colores */
+
 :root {
     --color-primary: #FF9E44;
     --color-neutral: #F8F5F0;
@@ -23,6 +23,10 @@ body {
     color: white !important;
 }
 
+.navbar-brand {
+    font-size: 1.8rem;
+}
+
 .navbar-custom .nav-link:hover {
     color: var(--color-neutral) !important;
 }
@@ -32,8 +36,17 @@ body {
     height: auto;
 }
 
+/*secciones*/
 .principal-section {
     background-color: var(--color-neutral);
+}
+
+.destacados-section {
+    background-color: var(--color-neutral);
+}
+
+.por-que-adoptar-section {
+    background-color: var(--color-secondary);
 }
 
 /* botones */
@@ -79,7 +92,7 @@ body {
 
 /* tarjetas de gatitos */
 .card {
-    width:  250px;
+    width: 250px;
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
@@ -88,6 +101,12 @@ body {
 
 .card:hover {
     transform: translateY(-5px);
+}
+
+/*texto*/
+.reason:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
 }
 
 /* footer */
@@ -106,13 +125,103 @@ body {
     text-decoration: underline;
 }
 
+/* carrusel de testimonios */
+.testimonio-card {
+    width: 300px;
+    min-height: 180px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    margin: auto;
+}
 
+.testimoniol-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.testimonio-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.testimonio-card .card-text {
+    font-style: italic;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.testimonio-card footer {
+    margin-top: auto;
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.7;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-size: 60%;
+}
+
+/* ajustes carrusel */
+.carousel-inner {
+    padding: 1rem 0;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     .principal-section .display-4 {
         font-size: 2rem;
     }
-    
+
+    .destacados-section {
+        font-size: 2rem;
+    }
+
+    .por-que-adoptar-section {
+        font-size: 2rem;
+    }
+
     .section-title {
         font-size: 1.8rem;
     }
+
+    .testimonial-card {
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+    }
+}
+
+/* Mejoras de espaciado */
+.success-stories {
+    padding: 3rem 0 !important;
+}
+
+.carousel-item .row {
+    margin: 0 -10px;
+}
+
+.carousel-item .col-md-4 {
+    padding: 0 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
