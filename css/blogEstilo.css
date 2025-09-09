@@ -16,6 +16,11 @@
     color: white !important;
 }
 
+.navbar-brand {
+    font-size: 1.8rem;
+}
+
+
 .navbar-custom .nav-link:hover {
     color: var(--color-neutral) !important;
 }
@@ -34,10 +39,10 @@
     color: var(--color-primary);
 }
 
-
 body{
     background-color: var(--color-neutral);
     color: var(--color-text);
+    font-family: 'Arial', sans-serif;
 }
 .sobre.nosotros {
     background-color: var(--color-neutral);
@@ -75,4 +80,17 @@ body{
 .footer-custom a:hover {
     color: white;
     text-decoration: underline;
+}
+
+/*botones*/
+.btn-accent {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: white;
+}
+
+.btn-accent:hover {
+    background-color: #d35400;
+    border-color: #d35400;
+    color: white;
 }
