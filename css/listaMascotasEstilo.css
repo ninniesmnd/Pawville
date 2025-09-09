@@ -1,0 +1,52 @@
+:root {
+    --color-primary: #FF9E44;
+    --color-neutral: #F8F5F0;
+    --color-secondary: #7EC8E3;
+    --color-text: #4A4A4A;
+    --color-accent: #FF5C5C;
+}
+
+/* estilos generales */
+body {
+    color: var(--color-text);
+    font-family: 'Arial', sans-serif;
+}
+
+/* navbar */
+.navbar-custom {
+    background-color: var(--color-primary);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    font-family: 'Grobold';
+    src: url('../fonts/Grobold-Regular.ttf') format('truetype');
+    font-size: 1.8rem;
+    color: #FF9E44;
+}
+
+.navbar-custom .nav-link:hover {
+    color: var(--color-neutral) !important;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+/* boton login */
+.btn-accent {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: white;
+}
+
+.btn-accent:hover {
+    background-color: #d35400;
+    border-color: #d35400;
+    color: white;
+}
