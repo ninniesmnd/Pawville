@@ -1,0 +1,93 @@
+:root {
+    --color-primary: #FF9E44;
+    --color-neutral: #F8F5F0;
+    --color-secondary: #7EC8E3;
+    --color-text: #4A4A4A;
+    --color-accent: #FF5C5C;
+}
+
+/* navbar */
+.navbar-custom {
+    background-color: var(--color-primary);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    font-family: 'Grobold';
+    src: url('../fonts/Grobold-Regular.ttf') format('truetype');
+    font-size: 1.8rem;
+    color: #FF9E44;
+}
+
+.navbar-custom .nav-link:hover {
+    color: var(--color-neutral) !important;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.principal-section {
+    background-color: var(--color-neutral);
+}
+
+/* Html */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Portada */
+
+.body{
+    background-color: var(--color-neutral);
+}
+
+.img-portada {
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.texto-portada {
+    max-width: 50%;
+    margin: 12px auto 0 auto;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/* Seccion de Gato o Perro */
+
+.btn-secondary {
+    background-color: var(--color-primary); /* azul claro */
+    color: #fff;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--color-secondary); /* naranja */
+    color: #fff;
+    border: none;
+}
+
+/* Tips Para Gato */
+.cat-tips-section .card-img-left {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: var(--color-neutral);
+    flex-shrink: 0;
+    margin-right: 32px;
+}
+
+.cat-tips-section .card {
+    min-height: 180px;
+    padding: 24px;
+    align-items: center;
+}
