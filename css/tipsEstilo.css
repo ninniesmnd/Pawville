@@ -45,6 +45,8 @@ html{
 
 .body{
     background-color: var(--color-neutral);
+    color: var(--color-text);
+    font-family: 'Arial', sans-serif;
 }
 
 .img-portada {
@@ -87,7 +89,61 @@ html{
 }
 
 .cat-tips-section .card {
-    min-height: 180px;
-    padding: 24px;
-    align-items: center;
+    background-color: var(--color-primary);
+    border: var(--color-text);
+}
+
+.cat-tips-section .card-img-left,
+.dog-tips-section .card-img-right {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: var(--color-neutral);
+    flex-shrink: 0;
+}
+
+/* Tips Para Perro */
+.dog-tips-section .card-img-right {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: var(--color-neutral);
+    flex-shrink: 0;
+    margin-left: 32px;
+}
+
+.dog-tips-section .card {
+    background-color: var(--color-secondary); /* azul claro para perros */
+    border: var(--color-text);
+}
+
+/* footer */
+.footer-custom {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.footer-custom a {
+    color: var(--color-neutral);
+    text-decoration: none;
+}
+
+.footer-custom a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/*botones*/
+.btn-accent {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: white;
+}
+
+.btn-accent:hover {
+    background-color: #d35400;
+    border-color: #d35400;
+    color: white;
 }
