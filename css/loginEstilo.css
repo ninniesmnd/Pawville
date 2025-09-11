@@ -1,0 +1,158 @@
+:root {
+    --color-primary: #FF9E44;
+    --color-neutral: #F8F5F0;
+    --color-secondary: #7EC8E3;
+    --color-text: #4A4A4A;
+    --color-accent: #FF5C5C;
+}
+
+/* navbar */
+.navbar-custom {
+    background-color: var(--color-primary);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    font-family: 'Grobold';
+    src: url('../fonts/Grobold-Regular.ttf') format('truetype');
+    font-size: 1.8rem;
+    color: #FF9E44;
+}
+
+.navbar-custom .nav-link:hover {
+    color: var(--color-neutral) !important;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.principal-section {
+    background-color: var(--color-neutral);
+}
+
+body {
+  background-color: var(--color-neutral);
+}
+
+/* login */
+.register-container {
+    max-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* Lado izquierdo */
+.register-left {
+    background-color: var(--color-secondary);
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+.register-left h2 {
+    font-weight: bold;
+    margin-top: 20px;
+}
+.register-left p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.9);
+}
+.register-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin: 0 auto 1rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Lado derecho */
+.register-right {
+    padding: 40px;
+}
+.register-title {
+    color: var(--color-primary);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* botones */
+.btn-primary-custom {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    transition: background 0.3s;
+}
+.btn-primary-custom:hover {
+    background-color: var(--color-accent);
+}
+
+/* input mostrar contraseña */
+.input-group input.form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.input-group button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Links */
+a.link-secondary {
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+a.link-secondary:hover {
+    text-decoration: underline;
+}
+
+/* sensible */
+@media (max-width: 768px) {
+    .register-container {
+        flex-direction: column;
+    }
+    .register-left, .register-right {
+        width: 100%;
+        text-align: center;
+    }
+    .register-left {
+        padding: 2rem 1rem;
+    }
+    .register-right {
+        padding: 2rem 1rem;
+    }
+}
+
+/* footer */
+.footer-custom {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.footer-custom a {
+    color: var(--color-neutral);
+    text-decoration: none;
+}
+
+.footer-custom a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.container {
+    flex: 1;
+}
