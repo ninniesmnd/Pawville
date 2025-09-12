@@ -39,10 +39,20 @@ body {
     height: auto;
 }
 
+.navbar-toggler {
+    border-color: white;
+    color: white
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 /*secciones*/
 .principal-section {
     background-color: var(--color-neutral);
-}
+    line-height: 1.6;
+}   
 
 .destacados-section {
     background-color: var(--color-neutral);
@@ -53,6 +63,7 @@ body {
 }
 
 /* botones */
+
 .btn-accent {
     background-color: var(--color-accent);
     border-color: var(--color-accent);
@@ -95,11 +106,10 @@ body {
 
 /* tarjetas de gatitos */
 .card {
-    width: 250px;
-    height: 300px;
-    object-fit: cover;
+    height: 100%;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    
 }
 
 .card:hover {
@@ -139,7 +149,7 @@ body {
     margin: auto;
 }
 
-.testimoniol-card:hover {
+.testimonio-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
@@ -184,7 +194,36 @@ body {
     padding: 1rem 0;
 }
 
-/* Responsive */
+.success-stories {
+    padding: 3rem 0 !important;
+}
+
+.carousel-item .row {
+    margin: 0 -10px;
+}
+
+.carousel-item .col-md-4 {
+    padding: 0 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* responsive */
+@media (max-width: 400px) {
+    .principal-section .display-4 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .principal-section img {
+        max-height: 250px;
+        object-fit: cover;
+    }
+}
+
 @media (max-width: 768px) {
     .principal-section .display-4 {
         font-size: 2rem;
@@ -202,7 +241,7 @@ body {
         font-size: 1.8rem;
     }
 
-    .testimonial-card {
+    .testimonio-card {
         width: 90%;
         margin-bottom: 1.5rem;
     }
@@ -211,20 +250,9 @@ body {
     .carousel-control-next {
         width: 10%;
     }
-}
 
-/* Mejoras de espaciado */
-.success-stories {
-    padding: 3rem 0 !important;
-}
-
-.carousel-item .row {
-    margin: 0 -10px;
-}
-
-.carousel-item .col-md-4 {
-    padding: 0 10px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
+    .footer-custom .col-md-4 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
 }
