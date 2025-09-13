@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawville - Registro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/registroEstilo.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <img src="../img/logo.svg" alt="Logo Pawville" class="logo me-2" style="width: 50px;">
+                <a class="navbar-brand" href="/html/home.html">Pawville</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/html/home.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/blog.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="login.html" class="btn btn-accent btn-m ms-2">Login</a>
+        </div>
+    </nav>
+
+    <!-- Registro centrado -->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="register-container row g-0">
+            <!-- Lado izquierdo -->
+            <div class="col-md-6 register-left d-flex flex-column justify-content-center">
+                <div class="mb-3 text-center">
+                    <div class="register-logo">🐾</div>
+                    <h2>Pawville</h2>
+                    <p>Únete a nuestra comunidad y encuentra a tu compañero ideal</p>
+                </div>
+            </div>
+            <!-- Lado derecho -->
+            <div class="col-md-6 register-right p-4">
+                <h2 class="mb-4 register-title">Registro</h2>
+                <form id="registerForm">
+                    <div class="mb-3">
+                        <label class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" placeholder="Ingrese su nombre completo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Ingrese su email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Contraseña</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required>
+                            <button class="btn btn-outline-secondary" type="button" id="togglePassword">Mostrar</button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Confirmar contraseña</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Repita su contraseña" required>
+                            <button class="btn btn-outline-secondary" type="button" id="toggleConfirmPassword">Mostrar</button>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary-custom w-100">Registrarse</button>
+                </form>
+                <p class="text-center mt-3">
+                    ¿Ya tienes una cuenta? <a href="login.html" class="link-secondary">Inicia sesión</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer-custom py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-start">
+                    <h5>Pawville</h5>
+                    <p>Conectando familias con sus compañeros ideales.</p>
+                </div>
+                <div class="col-md-4 mb-3 text-md-center">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#">Adopta</a></li>
+                        <li class="list-inline-item"><a href="#">Nosotros</a></li>
+                        <li class="list-inline-item"><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3 text-md-end social-icons">
+                    <!-- iconos sociales -->
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2025 Pawville. Todos los derechos reservados.</p>
+            <p class="text-center mb-0">Desarrollado por alumnos de DuocUC.</p>
+        </div>
+    </footer>
+
+    <script>
+      // Mostrar/Ocultar contraseñas
+      const togglePassword = document.getElementById('togglePassword');
+      const passwordInput = document.getElementById('password');
+      togglePassword.addEventListener('click', () => {
+        passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+      });
+
+      const toggleConfirmPassword = document.getElementById('toggleConfirmPassword');
+      const confirmPasswordInput = document.getElementById('confirmPassword');
+      toggleConfirmPassword.addEventListener('click', () => {
+        confirmPasswordInput.type = confirmPasswordInput.type === 'password' ? 'text' : 'password';
+      });
+
+      document.getElementById("registerForm").addEventListener("submit", function(e){
+        e.preventDefault();
+        alert("Función de registro aquí");
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
