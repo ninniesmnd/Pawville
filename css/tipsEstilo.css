@@ -6,6 +6,13 @@
     --color-accent: #FF5C5C;
 }
 
+body{
+    background-color: var(--color-neutral);
+    color: var(--color-text);
+    font-family: 'Arial', sans-serif;
+}
+
+
 /* navbar */
 .navbar-custom {
     background-color: var(--color-primary);
@@ -20,7 +27,6 @@
     font-family: 'Grobold';
     src: url('../fonts/Grobold-Regular.ttf') format('truetype');
     font-size: 1.8rem;
-    color: #FF9E44;
 }
 
 .navbar-custom .nav-link:hover {
@@ -32,6 +38,16 @@
     height: auto;
 }
 
+.navbar-toggler {
+    border-color: white;
+    color: white
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/*secciones*/
 .principal-section {
     background-color: var(--color-neutral);
 }
@@ -42,13 +58,6 @@ html{
 }
 
 /* Portada */
-
-.body{
-    background-color: var(--color-neutral);
-    color: var(--color-text);
-    font-family: 'Arial', sans-serif;
-}
-
 .img-portada {
     max-width: 700px;
     height: auto;

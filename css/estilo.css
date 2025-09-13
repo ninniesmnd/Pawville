@@ -26,8 +26,7 @@ body {
 .navbar-brand {
     font-family: 'Grobold';
     src: url('../fonts/Grobold-Regular.ttf') format('truetype');
-    font-size: 1.8rem;
-    color: #FF9E44;
+    font-size: 1.8rem;;
 }
 
 .navbar-custom .nav-link:hover {

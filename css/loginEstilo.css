@@ -63,6 +63,20 @@ color: white;
 transform: translateY(-2px);
 }
 
+.btn-outline-secondary {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.btn-outline-secondary:hover {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    color: white;
+    transform: translateY(-2px);
+}
+
 /* login */
 .register-container {
     max-width: 900px;
@@ -143,21 +157,17 @@ a.link-secondary:hover {
     text-decoration: underline;
 }
 
-/* sensible */
-@media (max-width: 768px) {
-    .register-container {
-        flex-direction: column;
-    }
-    .register-left, .register-right {
-        width: 100%;
-        text-align: center;
-    }
-    .register-left {
-        padding: 2rem 1rem;
-    }
-    .register-right {
-        padding: 2rem 1rem;
-    }
+/* ocultar el icono del "ojo" en Edge/IE */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+/* ocultar el icono del "ojo" en Chrome/Safari (WebKit) */
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-textfield-decoration-container,
+input[type="password"]::-webkit-textfield-decoration {
+  display: none !important;
 }
 
 /* footer */
@@ -178,4 +188,22 @@ a.link-secondary:hover {
 
 .container {
     flex: 1;
+}
+
+
+/* responsive */
+@media (max-width: 768px) {
+    .register-container {
+        flex-direction: column;
+    }
+    .register-left, .register-right {
+        width: 100%;
+        text-align: center;
+    }
+    .register-left {
+        padding: 2rem 1rem;
+    }
+    .register-right {
+        padding: 2rem 1rem;
+    }
 }
