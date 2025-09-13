@@ -1,0 +1,91 @@
+:root {
+    --color-primary: #FF9E44;
+    --color-neutral: #F8F5F0;
+    --color-secondary: #7EC8E3;
+    --color-text: #4A4A4A;
+    --color-accent: #FF5C5C;
+}
+
+/* navbar */
+.navbar-custom {
+    background-color: var(--color-primary);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    font-family: 'Grobold';
+    src: url('../fonts/Grobold-Regular.ttf') format('truetype');
+    font-size: 1.8rem;
+    color: #FF9E44;
+}
+
+.navbar-custom .nav-link:hover {
+    color: var(--color-neutral) !important;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.principal-section {
+    background-color: var(--color-neutral);
+}
+
+/* Body */
+
+body {
+    background-color: var(--color-neutral);
+    color: var(--color-text);
+    font-family: 'Arial', sans-serif;
+}
+
+.custom-title {
+    font-family: 'Grobold';
+    color: var(--color-text);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.custom-container {
+    background-color: var(--color-secondary); 
+    border-radius: 18px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    font-size: large;
+}
+
+/* footer */
+.footer-custom {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.footer-custom a {
+    color: var(--color-neutral);
+    text-decoration: none;
+}
+
+.footer-custom a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/*botones*/
+.btn-accent {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: white;
+}
+
+.btn-accent:hover {
+    background-color: #d35400;
+    border-color: #d35400;
+    color: white;
+}
