@@ -1,5 +1,5 @@
-// Base de datos de mascotas para adopción con localidades de Chile
-const mascotas = [
+// bd simulada
+export const mascotas = [
     {
         id: 1,
         nombre: "Baxter",
@@ -8,7 +8,7 @@ const mascotas = [
         descripcion: "Alegre y protector, ideal para paseos largos.",
         localidad: "Santiago",
         genero: "Macho",
-        tamaño: "Mediano",
+        tamano: "Mediano",
         raza: "Mestizo",
         imagen: "../img/lista mascotas/1.jpg"
     },
@@ -20,7 +20,7 @@ const mascotas = [
         descripcion: "Juguetón y cariñoso, perfecto para familias.",
         localidad: "Valparaíso",
         genero: "Macho",
-        tamaño: "Pequeño",
+        tamano: "Pequeño",
         raza: "Siamés",
         imagen: "../img/lista mascotas/7.jpg"
     },
@@ -32,7 +32,7 @@ const mascotas = [
         descripcion: "Cachorra juguetona y llena de energía.",
         localidad: "Concepción",
         genero: "Hembra",
-        tamaño: "Pequeño",
+        tamano: "Pequeño",
         raza: "Labrador",
         imagen: "../img/lista mascotas/6.jpg"
     },
@@ -44,7 +44,7 @@ const mascotas = [
         descripcion: "Tranquilo y obediente, se adapta fácilmente.",
         localidad: "La Serena",
         genero: "Macho",
-        tamaño: "Grande",
+        tamano: "Grande",
         raza: "Pastor Alemán",
         imagen: "../img/lista mascotas/3.jpg"
     },
@@ -56,7 +56,7 @@ const mascotas = [
         descripcion: "Independiente, le gusta explorar su espacio.",
         localidad: "Antofagasta",
         genero: "Macho",
-        tamaño: "Mediano",
+        tamano: "Mediano",
         raza: "Mestizo",
         imagen: "../img/lista mascotas/12.jpg"
     },
@@ -68,7 +68,7 @@ const mascotas = [
         descripcion: "Cachorra juguetona y llena de energía.",
         localidad: "Puerto Montt",
         genero: "Hembra",
-        tamaño: "Pequeño",
+        tamano: "Pequeño",
         raza: "Golden Retriever",
         imagen: "../img/lista mascotas/5.jpg"
     },
@@ -80,7 +80,7 @@ const mascotas = [
         descripcion: "Gatita recién nacida, requiere cuidados especiales.",
         localidad: "Iquique",
         genero: "Hembra",
-        tamaño: "Muy Pequeño",
+        tamano: "Muy Pequeño",
         raza: "Mestizo",
         imagen: "../img/lista mascotas/9.jpg"
     },
@@ -92,7 +92,7 @@ const mascotas = [
         descripcion: "Muy afectuosa, pide mimos constantemente.",
         localidad: "Rancagua",
         genero: "Hembra",
-        tamaño: "Pequeño",
+        tamano: "Pequeño",
         raza: "Angora",
         imagen: "../img/lista mascotas/10.jpg"
     },
@@ -104,7 +104,7 @@ const mascotas = [
         descripcion: "Traviesa y curiosa, siempre en movimiento.",
         localidad: "Talca",
         genero: "Hembra",
-        tamaño: "Pequeño",
+        tamano: "Pequeño",
         raza: "Mestizo",
         imagen: "../img/lista mascotas/11.jpg"
     },
@@ -116,7 +116,7 @@ const mascotas = [
         descripcion: "Noble y paciente, busca un hogar sereno.",
         localidad: "Arica",
         genero: "Macho",
-        tamaño: "Grande",
+        tamano: "Grande",
         raza: "Rottweiler",
         imagen: "../img/lista mascotas/2.jpg"
     },
@@ -128,7 +128,7 @@ const mascotas = [
         descripcion: "Sereno, disfruta de las siestas soleadas.",
         localidad: "Chillán",
         genero: "Macho",
-        tamaño: "Mediano",
+        tamano: "Mediano",
         raza: "Persa",
         imagen: "../img/lista mascotas/8.jpg"
     },
@@ -140,7 +140,7 @@ const mascotas = [
         descripcion: "Sociable, convive bien con otros perros.",
         localidad: "Temuco",
         genero: "Hembra",
-        tamaño: "Mediano",
+        tamano: "Mediano",
         raza: "Border Collie",
         imagen: "../img/lista mascotas/4.jpg"
     },
@@ -152,9 +152,9 @@ const mascotas = [
         descripcion: "Curioso y juguetón, ideal para familias.",
         localidad: "Valdivia",
         genero: "Macho",
-        tamaño: "Mediano",
+        tamano: "Mediano",
         raza: "Beagle",
-        imagen: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+        imagen: "../img/Milo.png"
     },
     {
         id: 14,
@@ -164,9 +164,9 @@ const mascotas = [
         descripcion: "Tierna y tranquila, ama las siestas largas.",
         localidad: "Osorno",
         genero: "Hembra",
-        tamaño: "Pequeño",
+        tamano: "Pequeño",
         raza: "Mestizo",
-        imagen: "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+        imagen: "../img/Luna.png"
     },
     {
         id: 15,
@@ -176,9 +176,9 @@ const mascotas = [
         descripcion: "Valiente y amigable, perfecto compañero.",
         localidad: "Punta Arenas",
         genero: "Macho",
-        tamaño: "Mediano",
+        tamano: "Mediano",
         raza: "Maine Coon",
-        imagen: "https://images.unsplash.com/photo-1574231164645-d6f0e8553590?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+        imagen: "../img/Simba.png"
     },
     {
         id: 16,
@@ -188,15 +188,14 @@ const mascotas = [
         descripcion: "Dulce y sociable, se adapta fácilmente.",
         localidad: "Coquimbo",
         genero: "Hembra",
-        tamaño: "Mediano",
+        tamano: "Mediano",
         raza: "Husky",
-        imagen: "https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+        imagen: "../img/Nala.png"
     }
 ];
 
-const MASCOTAS_POR_PAGINA = 12;
+export const MASCOTAS_POR_PAGINA = 12;
 let paginaActual = 1;
-
 
 function mostrarMascotas(pagina = 1) {
     const contenedor = document.getElementById('contenedorMascotas');
@@ -221,7 +220,7 @@ function mostrarMascotas(pagina = 1) {
           <p class="descripcion">${mascota.descripcion}</p>
         </div>
         <div class="card-footer bg-white border-0">
-          <a href="detalledeproducto.html?id=${mascota.id}" class="btn btn-adoptar btn-accent w-100">Adoptar</a>
+          <a href=../html/detalledeproducto.html?id=${mascota.id} class="btn btn-adoptar btn-accent w-100">Adoptar</a>
         </div>
       </div>
     `;
@@ -271,4 +270,10 @@ function actualizarPaginacion(paginaActual) {
 }
 
 // inicializar la página
-mostrarMascotas();
+function inicializarListaMascotas() {
+    // Verificar si estamos en la página correcta
+    if (document.getElementById('contenedorMascotas')) {
+        mostrarMascotas();
+    }
+}
+inicializarListaMascotas();
