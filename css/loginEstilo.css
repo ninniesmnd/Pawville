@@ -157,19 +157,6 @@ a.link-secondary:hover {
     text-decoration: underline;
 }
 
-/* ocultar el icono del "ojo" en Edge/IE */
-input[type="password"]::-ms-reveal,
-input[type="password"]::-ms-clear {
-  display: none;
-}
-
-/* ocultar el icono del "ojo" en Chrome/Safari (WebKit) */
-input[type="password"]::-webkit-credentials-auto-fill-button,
-input[type="password"]::-webkit-textfield-decoration-container,
-input[type="password"]::-webkit-textfield-decoration {
-  display: none !important;
-}
-
 /* footer */
 .footer-custom {
     background-color: var(--color-primary);
@@ -186,10 +173,18 @@ input[type="password"]::-webkit-textfield-decoration {
     text-decoration: underline;
 }
 
-.container {
-    flex: 1;
+/* ocultar el icono del "ojo" en Edge/IE */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
 }
 
+/* ocultar el icono del "ojo" en Chrome/Safari (WebKit) */
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-textfield-decoration-container,
+input[type="password"]::-webkit-textfield-decoration {
+  display: none !important;
+}
 
 /* responsive */
 @media (max-width: 768px) {

@@ -271,7 +271,7 @@ function actualizarPaginacion(paginaActual) {
 
 // inicializar la página
 function inicializarListaMascotas() {
-    // Verificar si estamos en la página correcta
+    // verificar si estamos en la página correcta
     if (document.getElementById('contenedorMascotas')) {
         mostrarMascotas();
     }
