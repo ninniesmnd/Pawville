@@ -1,13 +1,13 @@
 import { mascotas } from './listarMascotas.js';
 
-// Obtener ID de la URL
+//ID de la URL
 const urlParams = new URLSearchParams(window.location.search);
 const mascotaId = parseInt(urlParams.get('id'));
 
-// Buscar mascota
+// buscar mascota
 const mascota = mascotas.find(m => m.id === mascotaId);
 
-// Mostrar datos si se encuentra la mascota
+// mostrar datos si se encuentra la mascota
 if (mascota) {
     document.getElementById('mascota-imagen').src = mascota.imagen;
     document.getElementById('mascota-imagen').alt = mascota.nombre;

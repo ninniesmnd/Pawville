@@ -7,7 +7,7 @@ const togglePassword = document.getElementById('togglePassword');
 const toggleConfirmPassword = document.getElementById('toggleConfirmPassword');
 const registerForm = document.getElementById('registerForm');
 
-// Configurar evento para mostrar/ocultar contraseña
+// mostrar/ocultar contraseña
 togglePassword.addEventListener('click', function() {
     if (passwordInput.type === 'password') {
         passwordInput.type = 'text';
@@ -34,7 +34,7 @@ function passwordsMatch() {
     return passwordInput.value === confirmPasswordInput.value;
 }
 
-// Validación del formulario antes de enviar
+// validar antes de enviar
 registerForm.addEventListener('submit', function(e) {
     e.preventDefault();
     let isValid = true;
@@ -95,7 +95,7 @@ registerForm.addEventListener('submit', function(e) {
         confirmPasswordInput.classList.add('is-valid');
     }
     
-    // Enviar formulario
+    // enviar
     if (isValid) {
         alert('Registro exitoso (simulación)');
         // registerForm.submit();

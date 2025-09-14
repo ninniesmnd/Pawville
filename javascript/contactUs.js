@@ -1,4 +1,4 @@
-// Obtener elementos del formulario
+
 const nombreInput = document.getElementById('nombre');
 const emailInput = document.getElementById('email');
 const telefonoInput = document.getElementById('telefono');
@@ -21,14 +21,14 @@ if (nombreInput && emailInput && telefonoInput && motivoSelect && mensajeTextare
         return allowedDomains.includes(domain);
     }
 
-    //formato de teléfono chileno
+    //formato de celular
     function isValidPhone(phone) {
         if (!phone) return true; // opcional, puede estar vacío
         const phoneRegex = /^\+56\s?9\s?\d{4}\s?\d{4}$/;
         return phoneRegex.test(phone);
     }
 
-    // validación del formulario antes de enviar
+
     contactoForm.addEventListener('submit', function(e) {
         e.preventDefault();
         let isValid = true;
@@ -40,7 +40,7 @@ if (nombreInput && emailInput && telefonoInput && motivoSelect && mensajeTextare
         motivoSelect.classList.remove('is-invalid', 'is-valid');
         mensajeTextarea.classList.remove('is-invalid', 'is-valid');
         
-        // validar nombre (requerido)
+        // validar nombre
         if (!nombreInput.value.trim()) {
             nombreInput.classList.add('is-invalid');
             isValid = false;
@@ -51,7 +51,7 @@ if (nombreInput && emailInput && telefonoInput && motivoSelect && mensajeTextare
             nombreInput.classList.add('is-valid');
         }
         
-        // validar email (opcional pero con formato específico)
+        // validar email
         if (emailInput.value && emailInput.value.length > 100) {
             emailInput.classList.add('is-invalid');
             isValid = false;
@@ -62,7 +62,7 @@ if (nombreInput && emailInput && telefonoInput && motivoSelect && mensajeTextare
             emailInput.classList.add('is-valid');
         }
         
-        // validar teléfono (opcional pero con formato específico)
+        // validar teléfono
         if (telefonoInput.value && !isValidPhone(telefonoInput.value)) {
             telefonoInput.classList.add('is-invalid');
             isValid = false;
@@ -70,12 +70,12 @@ if (nombreInput && emailInput && telefonoInput && motivoSelect && mensajeTextare
             telefonoInput.classList.add('is-valid');
         }
         
-        // validar motivo (opcional)
+        // validar motivo
         if (motivoSelect.value) {
             motivoSelect.classList.add('is-valid');
         }
         
-        // validar mensaje (requerido)
+        // validar mensaje
         if (!mensajeTextarea.value.trim()) {
             mensajeTextarea.classList.add('is-invalid');
             isValid = false;
@@ -86,14 +86,14 @@ if (nombreInput && emailInput && telefonoInput && motivoSelect && mensajeTextare
             mensajeTextarea.classList.add('is-valid');
         }
         
-        // enviar formulario si es válido
+        // enviar formulario
         if (isValid) {
             alert('Formulario enviado correctamente (simulación)');
             // contactoForm.submit();
         }
     });
 
-    // validación en tiempo real para el nombre
+    // validacion en tiempo real para el nombre
     nombreInput.addEventListener('input', function() {
         if (!nombreInput.value.trim()) {
             nombreInput.classList.remove('is-valid', 'is-invalid');
@@ -106,7 +106,7 @@ if (nombreInput && emailInput && telefonoInput && motivoSelect && mensajeTextare
         }
     });
 
-    // validación en tiempo real para el email
+    // validacion en tiempo real para el email
     emailInput.addEventListener('input', function() {
         if (!emailInput.value) {
             emailInput.classList.remove('is-valid', 'is-invalid');
@@ -122,7 +122,7 @@ if (nombreInput && emailInput && telefonoInput && motivoSelect && mensajeTextare
         }
     });
 
-    // validación en tiempo real para el teléfono
+    // validacion en tiempo real para el teléfono
     telefonoInput.addEventListener('input', function() {
         if (!telefonoInput.value) {
             telefonoInput.classList.remove('is-valid', 'is-invalid');
@@ -135,7 +135,7 @@ if (nombreInput && emailInput && telefonoInput && motivoSelect && mensajeTextare
         }
     });
 
-    // validación en tiempo real para el mensaje
+    // validacion en tiempo real para el mensaje
     mensajeTextarea.addEventListener('input', function() {
         if (!mensajeTextarea.value.trim()) {
             mensajeTextarea.classList.remove('is-valid', 'is-invalid');
@@ -148,7 +148,7 @@ if (nombreInput && emailInput && telefonoInput && motivoSelect && mensajeTextare
         }
     });
 
-    // validación en tiempo real para el motivo
+    // validacion en tiempo real para el motivo
     motivoSelect.addEventListener('change', function() {
         if (motivoSelect.value) {
             motivoSelect.classList.remove('is-invalid');
@@ -159,5 +159,5 @@ if (nombreInput && emailInput && telefonoInput && motivoSelect && mensajeTextare
     });
 
 } else {
-    console.error('Error: No se encontraron todos los elementos del formulario de contacto');
+    console.error('Error: no estran todos los elementos');
 }
