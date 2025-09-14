@@ -211,9 +211,7 @@ function mostrarMascotas(pagina = 1) {
         tarjeta.className = 'col';
         tarjeta.innerHTML = `
         <div class="card mascota-card h-100" style="animation-delay: ${index * 0.1}s;">
-            <div class="position-relative">
             <img src="${mascota.imagen}" class="card-img-top" alt="${mascota.nombre}" style="height: 300px; object-fit: cover;">
-            </div>
         <div class="card-body">
           <h5 class="card-title">${mascota.nombre}</h5>
           <p class="tipo">${mascota.raza} • ${mascota.genero} • ${mascota.edad}</p>

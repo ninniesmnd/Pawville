@@ -157,7 +157,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1.5rem;
+    padding: 1.5 rem;
 }
 
 .testimonio-card .card-text {
