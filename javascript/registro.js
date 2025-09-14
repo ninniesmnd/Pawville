@@ -18,6 +18,17 @@ togglePassword.addEventListener('click', function() {
     }
 });
 
+// mostrar/ocultar confirmar contraseña
+toggleConfirmPassword.addEventListener('click', function() {
+    if (confirmPasswordInput.type === 'password') {
+        confirmPasswordInput.type = 'text';
+        toggleConfirmPassword.textContent = 'Ocultar';
+    } else {
+        confirmPasswordInput.type = 'password';
+        toggleConfirmPassword.textContent = 'Mostrar';
+    }
+});
+
 // validar formato de email
 function isValidEmail(email) {
     const allowedDomains = ['duoc.cl', 'profesor.duoc.cl', 'gmail.com'];
