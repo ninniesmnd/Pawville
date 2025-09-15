@@ -1,4 +1,4 @@
-import { mascotas } from './listarMascotas.js';
+import { mascotas } from '../javascript/listarMascotas.js';
 
 //ID de la URL
 const urlParams = new URLSearchParams(window.location.search);
